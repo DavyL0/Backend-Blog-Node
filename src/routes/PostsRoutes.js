@@ -17,6 +17,7 @@ const routes = (app)=> {
     app.get("/posts", listaPosts );
     app.post("/posts",criarNovoPost)
     app.post("/upload", upload.single("imagem"),uploadImagem)
+    app.put("/upload/:id", )
 }
 
 export default routes;
